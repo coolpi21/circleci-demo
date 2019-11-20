@@ -12,8 +12,7 @@ jobs:
             - "72:d8:47:ce:1d:12:3d:70:25:a4:d1:4e:76:a1:9a:d4"
       - checkout
       - restore_cache:
-          key:
-            - dependencies
+          key: dependencies
       - run:
           name: install
           command: yarn install
